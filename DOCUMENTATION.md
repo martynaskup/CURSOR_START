@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 Write here the prompt 
 
 Martyna
 
 
-=======
->>>>>>> ad342c4 (Enhance DOCUMENTATION.md by adding the PEDAC process, including sections on problem understanding, examples, data structures, and algorithm implementation.)
 ###  Kacper 
 # PEDAC
 # PEDAC Process
