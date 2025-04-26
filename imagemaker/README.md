@@ -1,24 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Image Maker
+
+An AI-powered image generation application using NVIDIA's sana-sprint-1.6b model via Replicate's API.
+
+## Features
+
+- Generate images from text prompts
+- Customize image dimensions (width and height)
+- Specify a main color for your generated image
+- Select output format (JPG, PNG, WebP)
+- Content safety filtering to prevent prohibited content
+- Download generated images
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (latest version recommended)
+- Replicate API token (get one at https://replicate.com/account)
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file in the root directory with your Replicate API token:
+   ```
+   REPLICATE_API_TOKEN=your_replicate_api_token_here
+   ```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
+
+## Usage
+
+1. Enter a description of the image you want to generate
+2. Optionally customize:
+   - Width and height (256px to 4096px)
+   - Main color
+   - Output format
+3. Click "Generate Image"
+4. Wait for the image to be generated
+5. Download the image if desired
+
+## Safety Measures
+
+This application includes content filtering to prevent the generation of:
+- NSFW content
+- Violent imagery
+- Illegal content
+- Other prohibited material
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Replicate API (NVIDIA's sana-sprint-1.6b model)
 
 ## Learn More
 
